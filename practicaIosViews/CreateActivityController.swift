@@ -11,7 +11,19 @@ import UIKit
 class CreateActivityController: UIViewController ,
 UIPickerViewDelegate, UIPickerViewDataSource  {
     
-    var tipo = ["trabajo","personal","colegio","ocio"]
+    @IBOutlet weak var error: UITextField!
+    @IBOutlet weak var desc: UITextView!
+    @IBOutlet weak var name: UITextField!
+    @IBOutlet weak var image: UIImageView!
+    var tipo = ["trabajo","casa","colegio","ocio"]
+    
+    @IBAction func submit(_ sender: Any) {
+        if desc.text == "" || name.text == "" {
+            
+        }else{
+            
+        }
+    }
     
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -26,10 +38,25 @@ UIPickerViewDelegate, UIPickerViewDataSource  {
         return tipo[row]
     }
     
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        switch tipo[row] {
+        case "trabajo":
+            image.image = UIImage(named: "trabajo.jpg")
+        case "casa":
+            image.image = UIImage(named: "casa.png")
+        case "colegio":
+            image.image = UIImage(named: "colegio.png")
+        case "ocio":
+            image.image = UIImage(named: "ocio.jpg")
+            
+        default:
+            image.image = UIImage(named: "empty.png")
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        image.image = UIImage(named: "trabajo.jpg")
     }
 
     override func didReceiveMemoryWarning() {
