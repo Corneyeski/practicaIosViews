@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3361E11C201919EA00AFCDCA /* Tarea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3361E11B201919EA00AFCDCA /* Tarea.swift */; };
+		33A41E46201BA0A800D29FC1 /* CreateActivityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A41E45201BA0A800D29FC1 /* CreateActivityController.swift */; };
 		33BC13922012711600D3A2B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BC13912012711600D3A2B5 /* AppDelegate.swift */; };
 		33BC13942012711600D3A2B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BC13932012711600D3A2B5 /* ViewController.swift */; };
 		33BC13972012711600D3A2B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33BC13952012711600D3A2B5 /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3361E11B201919EA00AFCDCA /* Tarea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tarea.swift; sourceTree = "<group>"; };
+		33A41E45201BA0A800D29FC1 /* CreateActivityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateActivityController.swift; sourceTree = "<group>"; };
 		33BC138E2012711600D3A2B5 /* practicaIosViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = practicaIosViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33BC13912012711600D3A2B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33BC13932012711600D3A2B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +107,8 @@
 				33BC13982012711600D3A2B5 /* Assets.xcassets */,
 				33BC139A2012711600D3A2B5 /* LaunchScreen.storyboard */,
 				33BC139D2012711600D3A2B5 /* Info.plist */,
+				3361E11B201919EA00AFCDCA /* Tarea.swift */,
+				33A41E45201BA0A800D29FC1 /* CreateActivityController.swift */,
 			);
 			path = practicaIosViews;
 			sourceTree = "<group>";
@@ -193,6 +199,7 @@
 				TargetAttributes = {
 					33BC138D2012711600D3A2B5 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = F4N6AT7BJM;
 						ProvisioningStyle = Automatic;
 					};
 					33BC13A12012711600D3A2B5 = {
@@ -261,6 +268,8 @@
 			files = (
 				33BC13942012711600D3A2B5 /* ViewController.swift in Sources */,
 				33BC13922012711600D3A2B5 /* AppDelegate.swift in Sources */,
+				33A41E46201BA0A800D29FC1 /* CreateActivityController.swift in Sources */,
+				3361E11C201919EA00AFCDCA /* Tarea.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,7 +423,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F4N6AT7BJM;
 				INFOPLIST_FILE = practicaIosViews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alan.practicaIosViews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -426,7 +437,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F4N6AT7BJM;
 				INFOPLIST_FILE = practicaIosViews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alan.practicaIosViews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -507,6 +520,7 @@
 				33BC13B82012711600D3A2B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		33BC13B92012711600D3A2B5 /* Build configuration list for PBXNativeTarget "practicaIosViewsTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +529,7 @@
 				33BC13BB2012711600D3A2B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		33BC13BC2012711600D3A2B5 /* Build configuration list for PBXNativeTarget "practicaIosViewsUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +538,7 @@
 				33BC13BE2012711600D3A2B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
