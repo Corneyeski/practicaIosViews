@@ -22,6 +22,13 @@ class Tarea {
         terminada = false
     }
     
+    init(name:String, descripcion:String, image:String) {
+        self.name = name
+        self.descripcion = descripcion
+        self.image = image
+        terminada = false
+    }
+    
     init(image: String, name: String, descripcion: String, terminada: Bool){
         self.image = image
         self.name = name

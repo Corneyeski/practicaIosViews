@@ -11,17 +11,19 @@ import UIKit
 class CreateActivityController: UIViewController ,
 UIPickerViewDelegate, UIPickerViewDataSource  {
     
+    @IBOutlet weak var create: UIButton!
     @IBOutlet weak var error: UITextField!
     @IBOutlet weak var desc: UITextView!
     @IBOutlet weak var name: UITextField!
     @IBOutlet weak var image: UIImageView!
     var tipo = ["trabajo","casa","colegio","ocio"]
+    var choise = ""
     
     @IBAction func submit(_ sender: Any) {
         if desc.text == "" || name.text == "" {
-            
+            error.isHidden = false;
         }else{
-            
+            create.sendActions(for: .touchUpInside)
         }
     }
     
@@ -52,6 +54,8 @@ UIPickerViewDelegate, UIPickerViewDataSource  {
         default:
             image.image = UIImage(named: "empty.png")
         }
+        
+        choise = tipo[row]
     }
     
     override func viewDidLoad() {
@@ -64,7 +68,14 @@ UIPickerViewDelegate, UIPickerViewDataSource  {
         // Dispose of any resources that can be recreated.
     }
     
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (sender  as AnyObject).tag == 1 {
+            
+            let create = segue.destination as! ViewController
+            
+            create.tareas.append(Tarea(name: name.text!, descripcion: desc.text!, image: choise))
+        }
+    }
     /*
     // MARK: - Navigation
 
