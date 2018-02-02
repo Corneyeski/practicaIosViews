@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33587E422024D9590003F100 /* CeldaPersonalizada.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33587E412024D9590003F100 /* CeldaPersonalizada.swift */; };
+		33587E442024E59B0003F100 /* EditTareaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33587E432024E59B0003F100 /* EditTareaController.swift */; };
 		3361E11C201919EA00AFCDCA /* Tarea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3361E11B201919EA00AFCDCA /* Tarea.swift */; };
 		33A41E46201BA0A800D29FC1 /* CreateActivityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A41E45201BA0A800D29FC1 /* CreateActivityController.swift */; };
 		33BC13922012711600D3A2B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BC13912012711600D3A2B5 /* AppDelegate.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		33587E412024D9590003F100 /* CeldaPersonalizada.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaPersonalizada.swift; sourceTree = "<group>"; };
+		33587E432024E59B0003F100 /* EditTareaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTareaController.swift; sourceTree = "<group>"; };
 		3361E11B201919EA00AFCDCA /* Tarea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tarea.swift; sourceTree = "<group>"; };
 		33A41E45201BA0A800D29FC1 /* CreateActivityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateActivityController.swift; sourceTree = "<group>"; };
 		33BC138E2012711600D3A2B5 /* practicaIosViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = practicaIosViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,11 +108,13 @@
 				33BC13912012711600D3A2B5 /* AppDelegate.swift */,
 				33BC13932012711600D3A2B5 /* ViewController.swift */,
 				33BC13952012711600D3A2B5 /* Main.storyboard */,
+				33587E432024E59B0003F100 /* EditTareaController.swift */,
 				33BC13982012711600D3A2B5 /* Assets.xcassets */,
 				33BC139A2012711600D3A2B5 /* LaunchScreen.storyboard */,
 				33BC139D2012711600D3A2B5 /* Info.plist */,
 				3361E11B201919EA00AFCDCA /* Tarea.swift */,
 				33A41E45201BA0A800D29FC1 /* CreateActivityController.swift */,
+				33587E412024D9590003F100 /* CeldaPersonalizada.swift */,
 			);
 			path = practicaIosViews;
 			sourceTree = "<group>";
@@ -269,7 +275,9 @@
 				33BC13942012711600D3A2B5 /* ViewController.swift in Sources */,
 				33BC13922012711600D3A2B5 /* AppDelegate.swift in Sources */,
 				33A41E46201BA0A800D29FC1 /* CreateActivityController.swift in Sources */,
+				33587E422024D9590003F100 /* CeldaPersonalizada.swift in Sources */,
 				3361E11C201919EA00AFCDCA /* Tarea.swift in Sources */,
+				33587E442024E59B0003F100 /* EditTareaController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,7 +17,9 @@ UIPickerViewDelegate, UIPickerViewDataSource  {
     @IBOutlet weak var name: UITextField!
     @IBOutlet weak var image: UIImageView!
     var tipo = ["trabajo","casa","colegio","ocio"]
-    var choise = ""
+    var choise = "trabajo"
+    
+    var tareas:[Tarea] = []
     
     @IBAction func submit(_ sender: Any) {
         if desc.text == "" || name.text == "" {
@@ -54,8 +56,8 @@ UIPickerViewDelegate, UIPickerViewDataSource  {
         default:
             image.image = UIImage(named: "empty.png")
         }
-        
         choise = tipo[row]
+        
     }
     
     override func viewDidLoad() {
@@ -73,7 +75,9 @@ UIPickerViewDelegate, UIPickerViewDataSource  {
             
             let create = segue.destination as! ViewController
             
-            create.tareas.append(Tarea(name: name.text!, descripcion: desc.text!, image: choise))
+            tareas.append(Tarea(name: name.text!, descripcion: desc.text!, image: choise))
+            
+            create.tareas = tareas
         }
     }
     /*
