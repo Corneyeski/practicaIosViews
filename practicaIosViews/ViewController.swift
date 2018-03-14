@@ -70,7 +70,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             create.tareas = tareas;
         }
         
-        if segue.identifier == "cel" {
+        /*if segue.identifier == "cel" {
             
             let create = segue.destination as! EditTareaController
             
@@ -89,7 +89,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             //create.row = sender as! Int
             
             print("hola que tal \(tableView.indexPathForSelectedRow?.row)!)")
-        }
+        }*/
     }
 }
 
